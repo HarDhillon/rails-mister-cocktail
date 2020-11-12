@@ -9,18 +9,30 @@
 require 'open-uri'
 require 'json'
 
-require 'open-uri'
-require 'json'
+Cocktail.destroy_all
+Dose.destroy_all
+Ingredient.destroy_all
+
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 drinks = open(url).read
 ingredient_hash = JSON.parse(drinks).transform_keys(&:to_sym)
 drinks_array = ingredient_hash[:drinks]
-puts 'Creating 100 fake cocktails...'
+
+puts 'Creating 100 fake Ingredients...'
 drinks_array.each do |hash|
   ingredient = Ingredient.create!(
     name: hash["strIngredient1"]
   )
 end
+
+# puts 'Creating 50 fake doses'
+# 50.times do
+#   dose = Dose.new(
+#     description: Faker::Food.measurement,
+#   )
+#   dose.ingredient_id = ((Ingredient.first.id)..(Ingredient.last.id)).to_a.sample
+# end
+
 puts 'Finished'
 puts '   .
   .

@@ -1,0 +1,16 @@
+<div class="banner">
+  <h1>Cocktails</h1>
+</div>
+
+<% @cocktails.each do |cocktail| %>
+
+<div class='card'>
+<%= link_to cocktail_path(cocktail.id) do %>
+  <p class='blue_cocktail'><%= cocktail.name %></p>
+<% end %>
+</div>
+<% end %>
+
+<%= link_to new_cocktail_path do %>
+  <p><i class="fas fa-glass-martini-alt"></i> Add A New Cocktail!</p>
+<% end %>

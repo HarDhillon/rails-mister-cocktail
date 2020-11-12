@@ -1,0 +1,13 @@
+<h2><%= @cocktail.name %></h2>
+
+<% @cocktail.doses.each do |dose| %>
+  <p><%= dose.description %> - <%= dose.ingredient.name %></p>
+<% end %>
+
+<%= link_to "/cocktails/#{@cocktail.id}/doses/new" do %>
+  <p><i class="fas fa-plus-circle"></i> Add New Dose</p>
+<% end %>
+
+<%= link_to cocktails_path(@cocktail) do %>
+  <p><i class="fas fa-cocktail"></i> Back To Cocktails</p>
+<% end %>
