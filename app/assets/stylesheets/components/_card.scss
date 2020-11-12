@@ -1,21 +1,35 @@
 .cards {
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 300px 300px;
-  row-gap: 40px;
-  column-gap: 103px;
+  width: 1090px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card{
   background-position: center;
   background-size: cover;
-  width: 200px;
-  height: 300px;
+  width: 239px;
+  height: 347px;
   border-radius: 20px;
   background-image: asset-url('blue_cocktail.png');
+  opacity: 0.8;
+}
+
+.card:hover{
+  opacity: 1;
+}
+
+.card-margin{
+  margin: 23px 40px;
+}
+
+.card-text{
+  color: lightgoldenrodyellow;
+  text-align: center;
+  position: relative;
+  top: 266px;
 }
 
 .card-link{
   text-decoration: none;
-  color: lightgoldenrodyellow;
 }
