@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-.banner{
-  font-family: 'Great Vibes', cursive;
+.banner {
+  h1{
+    font-family: 'Righteous', cursive;
+    font-size: 90px;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+    color: #C48309;
+    margin-bottom: 150px;
+    margin-top: 20px;
+  }
 }

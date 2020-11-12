@@ -1,14 +1,21 @@
+.cards {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px;
+  row-gap: 40px;
+  column-gap: 103px;
+}
+
 .card{
   background-position: center;
   background-size: cover;
   width: 200px;
   height: 300px;
+  border-radius: 20px;
+  background-image: asset-url('blue_cocktail.png');
 }
 
-.blue_cocktail{
-  background-image: asset-url('blue_cocktail.png');
-  height: 300px;
-  margin-bottom: 0;
-  background-size: cover;
-  background-position: center;
+.card-link{
+  text-decoration: none;
+  color: lightgoldenrodyellow;
 }

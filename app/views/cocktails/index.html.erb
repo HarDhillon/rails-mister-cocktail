@@ -1,16 +1,26 @@
-<div class="banner">
-  <h1>Cocktails</h1>
+<div class="container">
+  <div class="banner text-center">
+    <h1>Cocktails For The Beach</h1>
+  </div>
+
+  <div class="cards">
+    <%# FOR ALL COCKTAILS %>
+    <% @cocktails.each do |cocktail| %>
+
+    <a href="cocktails/<% cocktail.id %>" class="card-link">
+      <div class="card">
+        <p class='blue_cocktail'><%= cocktail.name %></p>
+      </div>
+    </a>
+
+    <% end %>
+
+  </div>
+  <div>
+  </div>
+    <%= link_to new_cocktail_path do %>
+      <p><i class="fas fa-glass-martini-alt"></i> Add A New Cocktail!</p>
+    <% end %>
+  
+
 </div>
-
-<% @cocktails.each do |cocktail| %>
-
-<div class='card'>
-<%= link_to cocktail_path(cocktail.id) do %>
-  <p class='blue_cocktail'><%= cocktail.name %></p>
-<% end %>
-</div>
-<% end %>
-
-<%= link_to new_cocktail_path do %>
-  <p><i class="fas fa-glass-martini-alt"></i> Add A New Cocktail!</p>
-<% end %>

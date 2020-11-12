@@ -5,3 +5,7 @@
   
   <%= f.submit class: "btn btn-primary"%>
 <% end %>
+
+<%= link_to "/cocktails/#{@cocktail.id}" do %>
+  <p><i class="fas fa-cocktail"></i> Back To Cocktail</p>
+<% end %>
