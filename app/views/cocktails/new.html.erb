@@ -1,14 +1,14 @@
-<div class="show-background">
+<div class="cocktail-background">
   <div class="new-container">
-    <div class="new-cocktail-img">
-    </div>
     <%= simple_form_for @cocktail do |f| %>
       <%= f.input :name %>
       <%= f.input :photo, as: :file %>
       <%= f.submit class: 'btn btn-primary' %>
+    <% end %>
+    <div class="cocktail-back">
+      <%= link_to root_path do %>
+        <p><i class="fas fa-cocktail"></i> Back To All Cocktails</p>
       <% end %>
+    </div>
   </div>
-  <%= link_to root_path do %>
-    <p><i class="fas fa-cocktail"></i> Back To All Cocktails</p>
-  <% end %>
 </div>

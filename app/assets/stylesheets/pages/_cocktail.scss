@@ -2,27 +2,47 @@
   margin: 0px 90px;
   padding: 0px;
   border-radius: 10px;
-}
-
-.new-cocktail-img{
   background-image: url(https://images.pexels.com/photos/2611814/pexels-photo-2611814.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-position: center;
   background-size: cover;
-  height: 55vh;
+  height: 100vh;
   border-radius: 8px;
   box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
   border: 0.5px solid black;
-  margin-top: 15px;
 }
 
 .new_cocktail{
-  width: 400px;
+  width: 900px;
   color: black;
   border: 1px solid black;
   border-radius: 6px;
-  background-color: antiquewhite;
+  background-color: snow;
   text-align: center;
   margin: 10px auto;
   margin-bottom: 0px;
+  margin-top: 225px;
   font-size: 20px;
+  opacity: 0.95;
+}
+
+.cocktail-background {
+  background-image: linear-gradient(#4AC29A, #BDFFF3);
+  // background-color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+}
+
+.cocktail-back {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.8;
+  padding: 8px;
+  border-radius: 5px;
+  width: 215px;
+  margin: 20px auto;
+
+  p{
+    margin: 0;
+  }
 }
