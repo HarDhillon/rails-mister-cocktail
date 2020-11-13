@@ -1,13 +1,20 @@
 <h2><%= @cocktail.name %></h2>
 
 <% @cocktail.doses.each do |dose| %>
-  <p><%= dose.description %> - <%= dose.ingredient.name %></p>
+  <div class="d-flex">
+    <p class="mr-1"><%= dose.description %> - <%= dose.ingredient.name %></p>
+
+    <%= link_to "/doses/#{dose.id}", method: :delete, data: { confirm: "Are you sure?" } do %>
+      <i class="fas fa-trash-alt"></i>
+    <% end %>
+  </div>
 <% end %>
 
 <%= link_to "/cocktails/#{@cocktail.id}/doses/new" do %>
   <p><i class="fas fa-plus-circle"></i> Add New Dose</p>
 <% end %>
 
-<%= link_to cocktails_path(@cocktail) do %>
+
+<%= link_to cocktails_path do %>
   <p><i class="fas fa-cocktail"></i> Back To All Cocktails</p>
 <% end %>

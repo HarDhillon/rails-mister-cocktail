@@ -15,12 +15,17 @@
   opacity: 0.8;
 }
 
+
 .card:hover{
   opacity: 1;
 }
 
 .card-margin{
   margin: 23px 40px;
+
+  a{
+    text-decoration: none;
+  }
 }
 
 .card-text{
@@ -28,8 +33,4 @@
   text-align: center;
   position: relative;
   top: 266px;
-}
-
-.card-link{
-  text-decoration: none;
 }

@@ -3,14 +3,17 @@
   border: 1px solid black;
   width: 217px;
   border-radius: 10px;
-  padding: 10px;
   background-color: black;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin: 10px auto;
+  margin-bottom: 40px;
 
-}
+  p{
+    margin-bottom: 0px;
+    padding: 12px;
+  }
 
-.new_cocktail p {
-  margin-bottom: 0px;
+  a{
+    text-decoration: none;
+  }
 }

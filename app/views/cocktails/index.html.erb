@@ -7,21 +7,23 @@
     <%# FOR ALL COCKTAILS %>
     <% @cocktails.each do |cocktail| %>
       <div class="card-margin">
-        <a href="cocktails/<% cocktail.id %>" class="card-link" style="display: block;">
+        <%= link_to cocktail_path(cocktail.id) do %>
+        
           <div class="card">
             <div class="card-text">
               <p><%= cocktail.name %></p>
             </div>
           </div>
-        </a>
+        <% end %>
       </div>
     <% end %>
   </div>
   
-    <%= link_to new_cocktail_path do %>
     <div class="new_cocktail">
-      <p><i class="fas fa-glass-martini-alt"></i> Add A New Cocktail!</p>
+      <%= link_to new_cocktail_path do %>
+        <p><i class="fas fa-glass-martini-alt"></i> Add A New Cocktail!</p>
     </div>
+
     <% end %>
   
 
