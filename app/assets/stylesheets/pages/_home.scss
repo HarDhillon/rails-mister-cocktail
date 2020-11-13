@@ -1,8 +1,12 @@
 // Specific CSS for your home-page
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-body {
-  background-image: url('https://images.pexels.com/photos/2233368/pexels-photo-2233368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+.index-background {
+  background-image: url('https://images.pexels.com/photos/1710795/pexels-photo-1710795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.index-container{
+  padding-bottom: 45px;
 }

@@ -1,7 +1,7 @@
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description, placeholder: '1 shot' %>
   <h5>OF</h5>
-  <%= f.input :ingredient, collection: @ingredients, class: 'select2' %>
+  <%= f.input :ingredient, collection: @ingredients, input_html: { class: 'select2' } %>
   
   <%= f.submit class: "btn btn-primary"%>
 <% end %>

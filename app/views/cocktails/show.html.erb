@@ -1,20 +1,40 @@
-<h2><%= @cocktail.name %></h2>
+<div class="show-background">
+  <div class="show-container">
+    <div class="cocktail-picture">
+    </div>
 
-<% @cocktail.doses.each do |dose| %>
-  <div class="d-flex">
-    <p class="mr-1"><%= dose.description %> - <%= dose.ingredient.name %></p>
+    <div class="cocktail-info">
 
-    <%= link_to "/doses/#{dose.id}", method: :delete, data: { confirm: "Are you sure?" } do %>
-      <i class="fas fa-trash-alt"></i>
-    <% end %>
+      <div class="cocktail-name">
+        <h2><%= @cocktail.name %></h2>
+      </div>
+
+      <div class="cocktail-ingredients">
+        <% @cocktail.doses.each do |dose| %>
+          <div class="d-flex justify-content-center">
+            <p class="mr-1"><%= dose.description %> - <%= dose.ingredient.name %></p>
+
+            <%= link_to "/doses/#{dose.id}", method: :delete, data: { confirm: "Are you sure?" } do %>
+              <i class="fas fa-trash-alt"></i>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="cocktail-options">
+        <%= link_to "/cocktails/#{@cocktail.id}/doses/new" do %>
+          <p><i class="fas fa-plus-circle"></i> Add New Dose</p>
+        <% end %>
+
+
+        <%= link_to root_path do %>
+          <p><i class="fas fa-cocktail"></i> Back To All Cocktails</p>
+        <% end %>
+
+        <%= link_to "/cocktails/#{@cocktail.id}", method: :delete, data: { confirm: "Are you sure?" } do %>
+              <p><i class="fas fa-skull-crossbones"></i> Delete Cocktail</p>
+            <% end %>
+      </div>
+    </div>
   </div>
-<% end %>
-
-<%= link_to "/cocktails/#{@cocktail.id}/doses/new" do %>
-  <p><i class="fas fa-plus-circle"></i> Add New Dose</p>
-<% end %>
-
-
-<%= link_to root_path do %>
-  <p><i class="fas fa-cocktail"></i> Back To All Cocktails</p>
-<% end %>
+</div>

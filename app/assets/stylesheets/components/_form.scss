@@ -2,8 +2,8 @@
   width: 300px;
 }
 
-#dose_ingredient{
-  width: 300px;
+#new_dose > div.form-group.select.required.dose_ingredient > span {
+  width: 300px !important;
 }
 
 #dose_form_input{

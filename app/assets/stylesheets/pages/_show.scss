@@ -14,3 +14,98 @@
   80% {transform: rotate(4deg);}
   100% {transform: rotate(-4deg);}
 }
+
+.show-container{
+  margin: 0px 90px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.show-background {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(#4AC29A, #BDFFF3);
+  // background-color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+}
+
+body > div > div > div.cocktail-info >  p {
+  margin-bottom: 0px;
+}
+
+.cocktail-picture{
+  background-image: url("https://familystylefood.com/wp-content/uploads/2018/06/mojitarita-familystylefood-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+  border-radius: 8px;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+  border: 0.5px solid black;
+}
+
+.cocktail-info {
+  background-image: url(https://images.pexels.com/photos/3661921/pexels-photo-3661921.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-size: cover;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+  border: 0.5px solid black;
+  height: 450px;
+
+  .cocktail-name{
+    margin-bottom: 40px;
+    text-align: center;
+    h2{
+      font-family: 'Lobster', cursive;
+      font-size: 45px;
+      color: black;
+      text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    }
+  }
+
+  .cocktail-ingredients{
+    width: 320px;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 23px;
+    border: 1px solid black;
+    background-color: white;
+    opacity: 0.8;
+    padding-top: 10px;
+
+    p{
+      margin-right: 12px !important;
+      text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+      font-weight: bolder;
+    }
+  }
+}
+
+.cocktail-options{
+  display: flex;
+  width: 582px;
+  margin: 10px auto;
+  padding-top: 15px;
+  justify-content: space-between;
+
+  p{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    opacity: 0.8;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  p:hover{
+    opacity: 1;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+}
